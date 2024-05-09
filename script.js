@@ -32,11 +32,11 @@ let sens = -1
 imgVerre.addEventListener('click', () => {
     switch (fond) {
         case true:
-            docLink.href = 'http://127.0.0.1:5501/styleNuit.css'
+            docLink.href = 'public/styleNuit.css'
             fond = !fond
             break;
         default:
-            docLink.href = 'http://127.0.0.1:5501/styleJour.css'
+            docLink.href = 'public/styleJour.css'
             fond = !fond
             break;
     }
@@ -46,6 +46,7 @@ imgVerre.addEventListener('click', () => {
         chr.style.setProperty('--rotation', ang)
     }
     sens *= -1
+    dateur(new Date())
 })
 dateur(new Date())
 function setClock() {

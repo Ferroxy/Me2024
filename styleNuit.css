@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: arabFont;
-    src: url(static/css/Bungee_Spice,Courgette,Kufam,Orbitron/Kufam/Kufam-VariableFont_wght.ttf);
+    src: url(public/Kufam-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Bungee Spice";
-    src: url(static/css/Bungee_Spice,Courgette,Kufam,Orbitron/Bungee_Spice/BungeeSpice-Regular.ttf);
+    src: url(public/BungeeSpice-Regular.ttf);
 }
 
 body {
