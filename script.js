@@ -56,6 +56,11 @@ function setClock() {
 
     if ((currentDate.getHours() == 0) && (currentDate.getSeconds() == 0)) { Location.reload() }
 
+    if (currentDate.getHours() > 12) {
+        hurHand.style.setProperty('border', "3px solid #d66719")
+    } else {
+        hurHand.style.setProperty('border', "0px")
+    }
     // if ((currentDate.getMinutes() + currentDate.getHours()) <= 61) { dateur(currentDate) }
     currentDate.getHours() == 0 ? (currentDate.getMinutes() == 0 ? dateur(currentDate) : undefined) : undefined
     const secondsRatio = currentDate.getSeconds()
