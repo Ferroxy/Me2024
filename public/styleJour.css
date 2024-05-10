@@ -192,7 +192,7 @@ body {
 }
 
 .clock .number23 {
-    --rotation: 345deg
+    --rotation: 345deg;
 }
 
 .clock .mn {

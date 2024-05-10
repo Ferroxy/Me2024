@@ -618,7 +618,7 @@ body {
 }
 
 .clock::after {
-    --contenu: 'ferh@t';
+    --contenu: 'ferroxy';
     content: var(--contenu);
     position: absolute;
     width: 40px;
