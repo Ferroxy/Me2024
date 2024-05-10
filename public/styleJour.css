@@ -585,6 +585,13 @@ body {
     border: 3px solid #d66719
 }
 
+.clock .hand.hur {
+    width: 19px;
+    height: 42%;
+    /* background-color: #a4aac6; */
+    border: 3px solid #d66719
+}
+
 .clock .hand.minute {
     width: 15px;
     height: 31%;

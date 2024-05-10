@@ -8,6 +8,7 @@ const dtArab = document.querySelector('.datar')
 const dtFr = document.querySelector('.datfr')
 
 const hourHand = document.querySelector('[data-hour-hand]')
+const hurHand = document.querySelector('[data-hur-hand]')
 const minuteHand = document.querySelector('[data-minute-hand]')
 const secondHand = document.querySelector('[data-second-hand]')
 
@@ -71,6 +72,7 @@ function setClock() {
     setRotation(secondHand, sens * secRatio)
     setRotation(minuteHand, sens * minutesRatio)
     setRotation(hourHand, sens * hoursRatio)
+    setRotation(hurHand, sens * (hoursRatio + 90))
     setRotation(jjr, sens * jjRatio)
     setRotation(mm, sens * (mmRatio - 90))
     setRotation(jj, sens * (mmRatio - 90))
