@@ -2,7 +2,10 @@ setInterval(setClock, 1)
 
 const chfr = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"]
 const jours = ["الأحد", "الإثنين", "الثلثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-const mois = ["جانفي", "فيفري", "مارس", "أفريل", "مايو", "جوان", "جويلية", "أوت", "سبتمبر", "أوكتبر", "نوفمبر", "ديسمبر"]
+
+// const mois = ["جانفي", "فيفري", "مارس", "أفريل", "مايو", "جوان", "جويلية", "أوت", "سبتمبر", "أوكتبر", "نوفمبر", "ديسمبر"]
+
+// const shahr = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "جوان", "جويلية", "أوغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"]
 
 const dtArab = document.querySelector('.datar')
 const dtFr = document.querySelector('.datfr')
@@ -19,13 +22,7 @@ const mm = document.querySelector('[data-mois]')
 const youm = document.querySelector('.youm')
 const jour = document.querySelector('.jour')
 const dday = document.querySelector('.dday')
-// const an = document.querySelector('.annee')
 
-// youm.innerHTML = (jours[new Date().getDay()])
-// jour.innerHTML = (jours[new Date().getDay() + 7])
-// dday.innerHTML = (jours[new Date().getDay() + 14])
-// mm.innerHTML = mois[new Date().getMonth()]
-// jj.innerHTML = new Date().toString().split(' ')[2]
 const imgVerre = document.querySelector('.verre')
 const docLink = document.querySelector("head > link")
 let fond = true
@@ -42,14 +39,16 @@ imgVerre.addEventListener('click', () => {
             break;
     }
     for (let i = 1; i < 24; i++) {
-        chr = document.querySelector('.number' + i)
-        ang = sens * i * 15 + 'deg'
+        let chr = document.querySelector('.number' + i)
+        let ang = sens * i * 15 + 'deg'
         chr.style.setProperty('--rotation', ang)
     }
     sens *= -1
     dateur(new Date())
 })
+
 dateur(new Date())
+
 function setClock() {
 
     const currentDate = new Date()
@@ -61,14 +60,12 @@ function setClock() {
     } else {
         hurHand.style.setProperty('border', "0px")
     }
-    // if ((currentDate.getMinutes() + currentDate.getHours()) <= 61) { dateur(currentDate) }
+
     currentDate.getHours() == 0 ? (currentDate.getMinutes() == 0 ? dateur(currentDate) : undefined) : undefined
-    const secondsRatio = currentDate.getSeconds()
+
     const secRatio = (Date.now() / 10000) * 60;
-    // const minutesRatio = currentDate.getMinutes() + secondsRatio / 60
     const minutesRatio = currentDate.getMinutes()
     const hr = currentDate.getHours()
-    // const hoursRatio = ((secondsRatio / 120 + currentDate.getMinutes()) / 24) + ((hr >= 12) ? (hr - 12) * 2.5 : (hr + 12) * 2.5)
     const hoursRatio = ((currentDate.getMinutes()) / 24) + ((hr >= 12) ? (hr - 12) * 2.5 : (hr + 12) * 2.5)
 
     const jjRatio = currentDate.toString().split(' ')[2] * 1
@@ -103,7 +100,6 @@ function dateur(ddate) {
     youm.innerHTML = (jours[ddate.getDay()])
     jour.innerHTML = (jours[ddate.getDay() + 7])
     dday.innerHTML = (jours[ddate.getDay() + 14])
-    // an.innerHTML = (2025 - 125 + ddate.getYear()) % 2000
     mm.innerHTML = mois[ddate.getMonth()]
     jj.innerHTML = ddate.toString().split(' ')[2]
 
