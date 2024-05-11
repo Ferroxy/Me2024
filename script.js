@@ -5,13 +5,12 @@ const jours = ["الأحد", "الإثنين", "الثلثاء", "الأربعا
 
 // const mois = ["جانفي", "فيفري", "مارس", "أفريل", "مايو", "جوان", "جويلية", "أوت", "سبتمبر", "أوكتبر", "نوفمبر", "ديسمبر"]
 
-// const shahr = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "جوان", "جويلية", "أوغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"]
+const shahr = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "جوان", "جويلية", "أوغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"]
 
 const dtArab = document.querySelector('.datar')
 const dtFr = document.querySelector('.datfr')
 
 const hourHand = document.querySelector('[data-hour-hand]')
-const hurHand = document.querySelector('[data-hur-hand]')
 const minuteHand = document.querySelector('[data-minute-hand]')
 const secondHand = document.querySelector('[data-second-hand]')
 
@@ -53,14 +52,6 @@ function setClock() {
 
     const currentDate = new Date()
 
-    if ((currentDate.getHours() == 0) && (currentDate.getSeconds() == 0)) { Location.reload() }
-
-    if (currentDate.getHours() > 12) {
-        hurHand.style.setProperty('border', "3px solid #d66719")
-    } else {
-        hurHand.style.setProperty('border', "0px")
-    }
-
     currentDate.getHours() == 0 ? (currentDate.getMinutes() == 0 ? dateur(currentDate) : undefined) : undefined
 
     const secRatio = (Date.now() / 10000) * 60;
@@ -74,7 +65,6 @@ function setClock() {
     setRotation(secondHand, sens * secRatio)
     setRotation(minuteHand, sens * minutesRatio)
     setRotation(hourHand, sens * hoursRatio)
-    setRotation(hurHand, sens * (hoursRatio + 90))
     setRotation(jjr, sens * jjRatio)
     setRotation(mm, sens * (mmRatio - 90))
     setRotation(jj, sens * (mmRatio - 90))
@@ -96,11 +86,10 @@ function dateur(ddate) {
     // console.log(event.toLocaleDateString('ar-EG', options));
     // Expected output (varies according to local timezone): الخميس، ٢٠ ديسمبر، ٢٠١٢
 
-
     youm.innerHTML = (jours[ddate.getDay()])
     jour.innerHTML = (jours[ddate.getDay() + 7])
     dday.innerHTML = (jours[ddate.getDay() + 14])
-    mm.innerHTML = mois[ddate.getMonth()]
+    mm.innerHTML = shahr[ddate.getMonth()]
     jj.innerHTML = ddate.toString().split(' ')[2]
 
     jjr.innerHTML = (ddate.toString()[8] == 0) ?
