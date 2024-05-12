@@ -19,7 +19,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to top, #000, #000000);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 33%, rgb(184 134 30) 100%);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Oxygen, Ubuntu, Cantarell,
         'Open Sans', 'Helvetica Neue',
@@ -104,95 +105,95 @@ body {
 }
 
 .clock .number1 {
-    --rotation: 15deg
+    --rotation: -15deg
 }
 
 .clock .number2 {
-    --rotation: 30deg
+    --rotation: -30deg
 }
 
 .clock .number3 {
-    --rotation: 45deg
+    --rotation: -45deg
 }
 
 .clock .number4 {
-    --rotation: 60deg
+    --rotation: -60deg
 }
 
 .clock .number5 {
-    --rotation: 75deg
+    --rotation: -75deg
 }
 
 .clock .number6 {
-    --rotation: 90deg
+    --rotation: -90deg
 }
 
 .clock .number7 {
-    --rotation: 105deg
+    --rotation: -105deg
 }
 
 .clock .number8 {
-    --rotation: 120deg
+    --rotation: -120deg
 }
 
 .clock .number9 {
-    --rotation: 135deg
+    --rotation: -135deg
 }
 
 .clock .number10 {
-    --rotation: 150deg
+    --rotation: -150deg
 }
 
 .clock .number11 {
-    --rotation: 165deg
+    --rotation: -165deg
 }
 
 .clock .number12 {
-    --rotation: 180deg;
+    --rotation: -180deg;
 }
 
 .clock .number13 {
-    --rotation: 195deg
+    --rotation: -195deg
 }
 
 .clock .number14 {
-    --rotation: 210deg
+    --rotation: -210deg
 }
 
 .clock .number15 {
-    --rotation: 225deg
+    --rotation: -225deg
 }
 
 .clock .number16 {
-    --rotation: 240deg
+    --rotation: -240deg
 }
 
 .clock .number17 {
-    --rotation: 255deg
+    --rotation: -255deg
 }
 
 .clock .number18 {
-    --rotation: 270deg
+    --rotation: -270deg
 }
 
 .clock .number19 {
-    --rotation: 285deg
+    --rotation: -285deg
 }
 
 .clock .number20 {
-    --rotation: 300deg
+    --rotation: -300deg
 }
 
 .clock .number21 {
-    --rotation: 315deg
+    --rotation: -315deg
 }
 
 .clock .number22 {
-    --rotation: 330deg
+    --rotation: -330deg
 }
 
 .clock .number23 {
-    --rotation: 345deg
+    --rotation: -345deg
 }
 
 .clock .mn {

@@ -25,15 +25,15 @@ const dday = document.querySelector('.dday')
 const imgVerre = document.querySelector('.verre')
 const docLink = document.querySelector("head > link")
 let fond = true
-let sens = -1
+let sens = 1
 imgVerre.addEventListener('click', () => {
     switch (fond) {
         case true:
-            docLink.href = 'public/styleNuit.css'
+            docLink.href = 'public/styleJour.css'
             fond = !fond
             break;
         default:
-            docLink.href = 'public/styleJour.css'
+            docLink.href = 'public/styleNuit.css'
             fond = !fond
             break;
     }
