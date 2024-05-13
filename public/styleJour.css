@@ -37,10 +37,10 @@ body {
     height: 750px;
     /* background-color: linear-gradient(to top, #000, #ffdbb4); */
     border-radius: 50%;
-    /* border: 3px solid #b7c1f3; */
+    border: 3mm ridge #8c6d34;
     position: relative;
     background: #000000;
-    box-shadow: 3px 5px #397eba
+    /* box-shadow: 3px 5px #397eba */
 }
 
 .clock .afond {
@@ -204,7 +204,7 @@ body {
     height: 70%;
     color: #9caee6;
     /* background-color: #00c2ff0a; */
-    border: 1px solid #c9871c;
+    border: .9mm ridge #c9871c;
     text-align: center;
     border-radius: 50%;
     left: 15%;
@@ -263,9 +263,9 @@ body {
 .datar {
     position: absolute;
     left: 42.5%;
-    top: 28.7%;
+    top: 67.7%;
     text-align: center;
-    color: #00BCD4;
+    color: #CDDC39;
     /* background-color: #08361524; */
     padding: 2px 21px;
     border: 1px solid #d84a2f7a;
@@ -275,10 +275,10 @@ body {
 .datfr {
     position: absolute;
     left: 42.5%;
-    top: 67.7%;
+    top: 28.7%;
     font-size: .85em;
     text-align: center;
-    color: #CDDC39;
+    color: #00BCD4;
     /* background-color: #08361524; */
     padding: 2px 21px;
     border: 1px solid #d84a2f7a;
@@ -630,8 +630,8 @@ body {
     border-radius: 50%;
     color: #000000;
     /* background-color: #233890; */
-    background-color: #e5ed1b;
-    /* border: 3px solid #233890; */
+    background-color: #d66719;
+    border: 2px solid #e5ed1b;
     text-align: center;
     font-size: 0.7em;
     font-weight: lighter;

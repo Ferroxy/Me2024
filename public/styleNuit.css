@@ -203,7 +203,7 @@ body {
     height: 70%;
     color: #9caee6;
     /* background-color: #00c2ff0a; */
-    border: .5mm ridge #a3b519d6;
+    border: .9mm ridge #a3b519d6;
     text-align: center;
     border-radius: 50%;
     left: 15%;
@@ -629,8 +629,8 @@ body {
     border-radius: 50%;
     color: #000000;
     /* background-color: #233890; */
-    background-color: #e5ed1b;
-    /* border: 3px solid #233890; */
+    background-color: #3590d8;
+    border: 2px solid #e5ed1b;
     text-align: center;
     font-size: 0.7em;
     font-weight: lighter;
