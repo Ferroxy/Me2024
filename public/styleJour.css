@@ -47,16 +47,13 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* left: 25%;
-    bottom: 25%; */
-    /* border: 3px solid black; */
     border-radius: 50%;
     opacity: 0.12;
-    transform: rotate(-2.3deg);
+    transform: rotate(-1.5deg);
 }
 
 .clock .afond.bis {
-    transform: rotate(13deg);
+    transform: rotate(13.5deg);
     opacity: 0.25;
 }
 
