@@ -17,6 +17,7 @@ const secondHand = document.querySelector('[data-second-hand]')
 const jj = document.querySelector('[data-jour]')
 const jjr = document.querySelector('[data-jra]')
 const mm = document.querySelector('[data-mois]')
+const mme = document.querySelector('[data-month]')
 
 const youm = document.querySelector('.youm')
 const jour = document.querySelector('.jour')
@@ -67,6 +68,7 @@ function setClock() {
     setRotation(hourHand, sens * hoursRatio)
     setRotation(jjr, sens * jjRatio)
     setRotation(mm, sens * (mmRatio - 90))
+    setRotation(mme, sens * (mmRatio - 90))
     setRotation(jj, sens * (mmRatio - 90))
 }
 
@@ -91,6 +93,7 @@ function dateur(ddate) {
     dday.innerHTML = (jours[ddate.getDay() + 14])
     // mm.innerHTML = shahr[ddate.getMonth()]
     mm.innerHTML = event.toLocaleDateString('ar-EG', options).split(' ')[1]
+    mme.innerHTML = event.toDateString('', options).split(' ')[1]
 
     jj.innerHTML = ddate.toString().split(' ')[2]
 

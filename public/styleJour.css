@@ -306,6 +306,7 @@ body {
 
 .calend .jj.ar {
     font-weight: bolder;
+    animation: transparence 6s 3s ease-in infinite;
 }
 
 .calend .mm {
@@ -322,7 +323,25 @@ body {
     left: 8%;
     bottom: 8%;
     transform: rotate(calc(var(--rotation) * 6deg));
-    animation: transparence 2s 1s ease-in infinite;
+    visibility: hidden;
+    /* animation: transparence 6s 1s ease-in infinite; */
+}
+
+.calend .mme {
+    --rotation: 0;
+    position: absolute;
+    width: 84%;
+    height: 84%;
+    color: #9caee6;
+    /* font-size: 1.4rem; */
+    /* border: 2px solid #c0c3d778; */
+    /* background-color: #00c2ff21; */
+    text-align: center;
+    border-radius: 50%;
+    left: 8%;
+    bottom: 8%;
+    transform: rotate(calc(var(--rotation) * 6deg));
+    animation: transparence 6s 3s ease-in infinite;
 }
 
 .clock .cl {
@@ -601,7 +620,7 @@ body {
     /* z-index: -1; */
 }
 
-.clock .annee {
+/* .clock .annee {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -614,7 +633,7 @@ body {
     font-weight: bold;
     z-index: 1;
     animation: transparence 2s ease-in-out infinite;
-}
+} */
 
 .clock::after {
     --contenu: 'ferh@t';

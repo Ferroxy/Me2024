@@ -325,6 +325,24 @@ body {
     animation: transparence 6s ease-in infinite;
 }
 
+d .mme {
+    --rotation: 0;
+    position: absolute;
+    width: 84%;
+    height: 84%;
+    color: #9caee6;
+    /* font-size: 1.4rem; */
+    /* border: 2px solid #c0c3d778; */
+    /* background-color: #00c2ff21; */
+    text-align: center;
+    border-radius: 50%;
+    left: 8%;
+    bottom: 8%;
+    transform: rotate(calc(var(--rotation) * 6deg));
+    animation: transparence 6s 3s ease-in infinite;
+    visibility: hidden;
+}
+
 .clock .cl {
     /* color: #7cff61; */
     color: #fff500ed;
