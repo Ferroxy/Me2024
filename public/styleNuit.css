@@ -339,7 +339,7 @@ d .mme {
     left: 8%;
     bottom: 8%;
     transform: rotate(calc(var(--rotation) * 6deg));
-    animation: transparence 6s 3s ease-in infinite;
+    animation: transparence 6s ease-in infinite;
     visibility: hidden;
 }
 
