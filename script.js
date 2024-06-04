@@ -89,7 +89,9 @@ function dateur(ddate) {
     youm.innerHTML = (jours[ddate.getDay()])
     jour.innerHTML = (jours[ddate.getDay() + 7])
     dday.innerHTML = (jours[ddate.getDay() + 14])
-    mm.innerHTML = shahr[ddate.getMonth()]
+    // mm.innerHTML = shahr[ddate.getMonth()]
+    mm.innerHTML = event.toLocaleDateString('ar-EG', options).split(' ')[1]
+
     jj.innerHTML = ddate.toString().split(' ')[2]
 
     jjr.innerHTML = (ddate.toString()[8] == 0) ?
